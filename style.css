@@ -1,0 +1,365 @@
+:root {
+    --color_1: #222221; /* Harvest Gold */
+    --color_3: #e5989bc4; /* Dusty Rose */
+    --color_6: #cf676bab;
+    --color_4: #d1a57bc2; /* Muted Plum */
+    --color_8: #6aa6c9c0; /* Soft Sky Blue */
+    --color_2: #B7CE63; /* Moss Green */
+    --font-family:  'Trebuchet MS', sans-serif;
+}
+
+.header-container {
+    max-height: 150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--color_1);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.home-button {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 40px; /* Adjust font size as needed */
+    display: flex;
+    align-items: center;
+    bottom: 60px;
+    padding-left: 20px;
+
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    position: relative; /* Needed for positioning the icon */
+}
+
+
+header {
+    background-color: var(--color_1);
+    color: white;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+
+}
+
+.logo {
+    bottom: -20;
+    z-index: 1000;
+    filter: brightness(0) invert(1);
+    width: 150px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    transition: left 0.5s ease;
+
+}
+
+
+
+.options-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* Cover right half of the screen */
+    height: 100%;
+    background-color: var(--color_4);
+    z-index: 1000;
+    transition: right 1s ease;
+}
+
+.show-nav {
+    display: block;
+}
+
+.blur-content {
+    filter: blur(8px);
+}
+
+.hide-menu{
+    display: none;
+}
+
+.logo.centered {
+    left: 25%; /* Back to the full center when nav is not shown */
+    margin-top: 50%;
+
+}
+
+
+.menu-icon {
+    width: 40px;
+    height: auto;
+    position: fixed; /* Fixed to the right side of the header */
+    right: 20px;
+    top: 60px; /* Adjust as needed to align vertically */
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.2));
+}
+
+main {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.options-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color_4);
+    z-index: 1000;
+    transition: right 1s ease;
+}
+
+.show-nav {
+    display: block;
+}
+
+.options-nav ul {
+    list-style-type: none;
+}
+
+.options-nav ul li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    font-family: var(--font-family);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    position: relative;
+}
+
+main button, .startListBtn, .saveBtn {
+    font-family: var(--font-family);
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: var(--color_3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    font-size: x-large;
+    position: relative;
+}
+.modal {
+    background-color: var(--color_1);
+    outline: #fefefe;
+}
+
+h1 {
+    z-index: 000;
+    text-align: center;
+    font-size: xx-large; 
+    color: var(--color_6);
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+}
+
+/* styles.css */
+
+/* Set background color for the first column */
+#prepTable td:nth-child(1) {
+    background-color: var(--color_3); /* Change this color to your desired color */
+}
+
+/* Set background color for the second column */
+#prepTable td:nth-child(2) {
+    background-color: var(--color_6); /* Change this color to your desired color */
+}
+
+/* Set background color for the third column */
+#prepTable td:nth-child(3) {
+    background-color: var(--color_4); /* Change this color to your desired color */
+}
+#prepTable td:nth-child(4) {
+    background-color: var(--color_8); /* Change this color to your desired color */
+}
+
+#prepTable tr:first-child {
+    display: none;
+}
+/* Set background color for the fourth column */
+.modifyBtn > img {
+    filter: invert(1); /* Invert image color */
+    outline: none; /* Remove outline */
+    border: none; /* Remove border */
+    width: 30px; /* Set width */
+    height: 30px;
+}
+.modifyBtn{
+    width: 100%;
+    height: 30px;
+    border: 0px solid white; 
+}
+
+
+/* Make all cells equal-sized squares with white text */
+#prepTable td {
+    width: 100%px; /* Adjust the width to your desired size */
+    height: 30px; /* Adjust the height to your desired size */
+    text-align: center;
+    color: white;
+    border: 2px solid white; /* Add thick white border */
+}
+
+#prepTable td:nth-child(5) {/* Change this color to your desired color */
+    border: 0px solid white; 
+    height: 30px;
+    width: auto;
+}
+#prepTable {
+    width: 100%;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.more-btn {
+    background-color: var(--color_4);
+}
+
+.prep-btn{
+    background-color: var(--color_6);
+}
+.freezer-pull-btn, .saveBtn {
+    background-color: var(--color_8);
+}
+
+.icon {
+    width: 75px; /* Adjust the size of the icons as needed */
+    height: 75px;
+    position: absolute;
+    right: 75%; /* Position 10px away from the right border */
+}
+
+.prep-btn .icon {
+    filter: invert(1);
+    top: 50%; /* Center vertically */
+    height: 70px;
+    width: auto;
+    right: 74%;
+    transform: translateY(-50%) rotate(-50deg); /* Rotate counterclockwise by 45 degrees */
+}
+
+.prep-list-btn .icon {
+    filter: invert(1);
+    height: 65px;
+    width: auto;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%) rotate(0deg); /* Rotate counterclockwise by 20 degrees */
+}
+
+.freezer-pull-btn .icon {
+    filter: invert(1);
+    height: 55px;
+    width: auto;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+.modal
+ {
+    width: 100%;
+    background-color: var(--color_1);
+    color: white;
+}
+.modal-content{
+    background-color: var(--color_1);
+}
+.modal-content button{
+    background-color: var(--color_8);
+    margin: 0 auto;
+}
+
+.modal-tag{
+    justify-content: center;
+    display: inline-flex;
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+
+.modal input{
+    width: 20%;
+}
+

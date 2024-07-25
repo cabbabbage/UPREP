@@ -1,0 +1,20 @@
+.custom-modal {
+    background-color: black; 
+}
+
+.modal-title, .modal-body p, .close {
+    color: #6aa6c9c0; 
+}
+
+.btn-custom {
+    background-color: #6aa6c9c0; 
+    border: none; 
+}
+
+.btn-custom:hover {
+    background-color: darken(#6aa6c9c0, 10%); 
+}
+
+.modal-dialog.modal-lg {
+    max-width: 90%; 
+}

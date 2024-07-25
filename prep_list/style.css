@@ -1,0 +1,21 @@
+.custom-modal {
+    background-color: black; /* Black background for modal content */
+}
+
+.modal-title, .modal-body p, .close {
+    color: #6aa6c9c0; /* Light blue color for text */
+}
+
+.btn-custom {
+    background-color: #6aa6c9c0; /* Light blue background for buttons */
+    border: none; /* Remove default border */
+}
+
+.btn-custom:hover {
+    background-color: darken(#6aa6c9c0, 10%); /* Darker on hover */
+}
+
+.modal-dialog.modal-lg {
+    max-width: 90%; /* Larger modal for better mobile visibility */
+}
+
